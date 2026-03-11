@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    backdrop-filter: blur(10px); /* Efek kaca kekinian */
+    background-color: rgba(33, 37, 41, 0.9) !important; 
+    border-bottom: 2px solid #0d6efd;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
+.row .col-md-4 div, .card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: none !important; 
+    border-radius: 15px !important;
+}
+
+.row .col-md-4 div:hover, .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
+}
+
+.registration-card {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+    border-color: #0d6efd;
+}
+
+
+button[type="submit"] {
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+
+h1, h2, h3 {
+    color: #0d6efd;
+}
+
+header h1 {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    animation: fadeIn 0.8s ease-out;
+}
